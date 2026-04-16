@@ -1,0 +1,1010 @@
+
+<h2 class="sr-only">SRM TRP Engineering College Artificial Intelligence Department opportunity hub — curated hackathons, competitions, and student pathways</h2>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #eef4fb;
+  --bg-accent: #dce9f8;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-soft: #f5f9ff;
+  --surface-elevated: #ffffff;
+  --text: #122231;
+  --text-muted: #536273;
+  --text-soft: #6f7c8a;
+  --line: #d6dfea;
+  --line-strong: #bfd0e3;
+  --brand: #103a73;
+  --brand-2: #1f8a70;
+  --brand-3: #c64d2f;
+  --success: #1d7a4b;
+  --shadow-soft: 0 20px 50px rgba(15, 35, 62, 0.10);
+  --shadow-card: 0 14px 32px rgba(15, 35, 62, 0.10);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 16% 12%, rgba(31, 138, 112, 0.14), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(16, 58, 115, 0.16), transparent 24%),
+    radial-gradient(circle at 72% 82%, rgba(198, 77, 47, 0.10), transparent 22%),
+    linear-gradient(180deg, #eef4fb 0%, #f6f9fc 100%);
+  min-height: 100vh;
+  padding: 28px 16px 44px;
+}
+
+.dashboard {
+  max-width: 1260px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.98) 100%);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow-soft);
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(16, 58, 115, 0.05), transparent 34%),
+    linear-gradient(220deg, rgba(31, 138, 112, 0.05), transparent 28%);
+  pointer-events: none;
+}
+
+.hdr {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.hero-card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(245, 249, 255, 0.95));
+  box-shadow: 0 14px 26px rgba(15, 35, 62, 0.06);
+}
+
+.hero-card {
+  padding: 20px;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.brand-mark {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  flex-shrink: 0;
+  padding: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f7fb 100%);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  box-shadow: 0 0 0 4px rgba(16, 58, 115, 0.10);
+}
+
+.hdr h1 {
+  font-family: 'Manrope', 'Space Grotesk', sans-serif;
+  font-size: clamp(1.7rem, 1.15rem + 1.8vw, 2.7rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+
+.hdr h1 .accent {
+  color: var(--brand);
+}
+
+.hdr p {
+  margin-top: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.stats-bar {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  background: linear-gradient(180deg, rgba(245, 249, 255, 0.98), rgba(255, 255, 255, 0.98));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px 15px;
+  box-shadow: 0 10px 20px rgba(15, 35, 62, 0.05);
+}
+
+.stat-n {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.15rem, 0.9rem + 1vw, 1.6rem);
+  font-weight: 700;
+}
+
+.stat-l {
+  margin-top: 3px;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-soft);
+}
+
+.search-wrap {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+}
+
+.search {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  font-size: 0.92rem;
+  background: #fff;
+  color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 8px 18px rgba(15, 35, 62, 0.04);
+}
+
+.search:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px rgba(16, 58, 115, 0.14);
+  transform: translateY(-1px);
+}
+
+.filters {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.chip {
+  font-size: 0.76rem;
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  background: #fff;
+  color: var(--text-muted);
+  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+  color: var(--text);
+}
+
+.chip.active {
+  background: linear-gradient(135deg, rgba(16, 58, 115, 0.10), rgba(31, 138, 112, 0.10));
+  border-color: rgba(16, 58, 115, 0.24);
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--surface-elevated);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  animation: rise-in 0.34s ease both;
+}
+
+.card:nth-child(2n) { animation-delay: 0.03s; }
+.card:nth-child(3n) { animation-delay: 0.07s; }
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #b8cae1;
+  box-shadow: 0 18px 34px rgba(15, 35, 62, 0.15);
+}
+
+.card-head {
+  padding: 14px 15px 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.card-org {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.cat-badge {
+  font-size: 0.67rem;
+  padding: 4px 9px;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cat-bigtech { background: #d9eefa; color: #12507b; }
+.cat-it { background: #d8f4ea; color: #0f5d4b; }
+.cat-finance { background: #f8ebcd; color: #6a4216; }
+.cat-ai { background: #e2f0f4; color: #1e5f6e; }
+.cat-gov { background: #f8e5da; color: #7f3218; }
+.cat-dev { background: #e8efd9; color: #335e18; }
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+}
+
+.card-body {
+  padding: 12px 15px 13px;
+}
+
+.meta-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.meta-pill {
+  font-size: 0.68rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  border: 1px solid #ebe4d3;
+}
+
+.meta-pill.date {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.focus-text {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-bottom: 7px;
+  line-height: 1.42;
+}
+
+.rounds-label {
+  font-size: 0.67rem;
+  color: var(--text-soft);
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.rounds-list {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+}
+
+.round-tag {
+  font-size: 0.67rem;
+  padding: 3px 7px;
+  border-radius: 8px;
+  border: 1px solid #e4dfd0;
+  color: #5d696d;
+}
+
+.prize {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.expand-btn {
+  margin-top: 7px;
+  font-size: 0.75rem;
+  color: var(--brand);
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.expand-btn:hover {
+  color: #0b2f5e;
+}
+
+.detail-panel {
+  display: none;
+  padding: 12px 15px 13px;
+  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, #f8fbff 0%, #fff 100%);
+}
+
+.detail-panel.open {
+  display: block;
+}
+
+.detail-section {
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 4px;
+}
+
+.detail-text {
+  font-size: 0.78rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.winner-box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 4px;
+}
+
+.winner-ps {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.winner-sol {
+  font-size: 0.75rem;
+  margin-top: 3px;
+  color: var(--text);
+}
+
+.tip-box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.official-link {
+  font-size: 0.75rem;
+  color: var(--brand);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.official-link:hover {
+  text-decoration: underline;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2.8rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body { padding: 14px 10px 24px; }
+  .dashboard { border-radius: 18px; padding: 14px; }
+  .hdr { grid-template-columns: 1fr; }
+  .hero-card, .info-card { padding: 14px; border-radius: 18px; }
+  .brand-row { align-items: flex-start; }
+  .brand-mark { width: 88px; height: 88px; padding: 8px; }
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .card-head { padding: 12px 12px 8px; }
+  .card-body, .detail-panel { padding: 10px 12px 11px; }
+}
+</style>
+
+<div class="dashboard">
+<div class="hdr">
+  <div class="hero-card">
+    <div class="brand-row">
+      <img class="brand-mark" src="SRM.png" alt="SRM TRP Engineering College logo">
+      <div>
+        <div class="eyebrow">Artificial Intelligence and Data Science Department</div>
+        <h1><span class="accent">SRM TRP</span> Engineering College</h1>
+      </div>
+    </div>
+    <p>This site enlights Students with hackathon opportunities, competitions, and career pathways for learners in artificial intelligence, data science, cloud, and intelligent systems.</p>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-n" id="cnt">23</div><div class="stat-l">opportunities</div></div>
+  <div class="stat"><div class="stat-n">6</div><div class="stat-l">focus areas</div></div>
+  <div class="stat"><div class="stat-n">₹1Cr+</div><div class="stat-l">top prize pool</div></div>
+  <div class="stat"><div class="stat-n">12</div><div class="stat-l">job-linked programs</div></div>
+</div>
+
+<div class="search-wrap">
+  <input class="search" type="text" id="search" placeholder="Search opportunity, company, or focus area..." oninput="render()">
+</div>
+
+<div class="filters" id="filterbar">
+  <span class="chip active" data-cat="all" onclick="setFilter('all',this)">All</span>
+  <span class="chip" data-cat="bigtech" onclick="setFilter('bigtech',this)">Big Tech</span>
+  <span class="chip" data-cat="it" onclick="setFilter('it',this)">IT Services</span>
+  <span class="chip" data-cat="finance" onclick="setFilter('finance',this)">Finance</span>
+  <span class="chip" data-cat="ai" onclick="setFilter('ai',this)">AI / Cloud</span>
+  <span class="chip" data-cat="gov" onclick="setFilter('gov',this)">Govt / India</span>
+  <span class="chip" data-cat="dev" onclick="setFilter('dev',this)">Dev Platforms</span>
+  <span class="chip" data-cat="job" onclick="setFilter('job',this)">Offers Jobs/PPI</span>
+</div>
+
+<div class="grid" id="grid"></div>
+</div>
+
+<script>
+const DATA = [
+  {
+    id:1, name:"Smart India Hackathon (SIH)", org:"AICTE / MoE", cat:"gov",
+    focus:"Software & Hardware, AI, Cybersecurity, Health, AgriTech",
+    date:"Aug–Dec 2026 (Internal: Aug, Finale: Nov–Dec)",
+    status:"upcoming",
+    rounds:["Internal Campus Round","Idea Submission","Online Screening","36-hr Grand Finale"],
+    roundDetail:"Internal hackathon at college → top 30 teams nominated → idea submission on SIH portal → online evaluation → 36-hour offline Grand Finale at 60+ nodal centers across India. Team of 6 (min 1 female).",
+    prize:"₹1 Lakh per PS winner",
+    perks:"Govt visibility, startup funding pathway, recognition from MoE",
+    winners:[
+      {ps:"PS 1606 – Full-stack prototype (Heritage)", sol:"Radar Vision by Chethan AC team — multi-layer full-stack prototype, won SIH 2024 Finale"},
+      {ps:"Judicial database search (DR716)", sol:"NLP-powered keyword-based legal case search using spaCy/BERT, won SIH 2022"},
+      {ps:"Jharkhand Govt workflow transparency", sol:"Full-stack solution integrating ML for workflow automation, won ₹1L prize"},
+    ],
+    tip:"Avoid the most popular PS — pick unique, feasible ones aligned with the ministry's real need. Prioritize 36-hr stamina + demo polish.",
+    link:"https://sih.gov.in/",
+    jobs:false
+  },
+  {
+    id:2, name:"TCS CodeVita (Season 13)", org:"TCS", cat:"it",
+    focus:"Competitive coding, algorithms, DSA",
+    date:"Reg: Sep 18, 2025 | Zone 1: Nov 24–25 | Zone 2: Dec 8–9 | Grand Finale: 2026",
+    status:"open",
+    rounds:["Pre-Qualifier (24-hr, 6 Qs)","Qualifier (6-hr, 6 Qs)","Final Round","Grand Finale (venue, India)"],
+    roundDetail:"Pre-Qualifier: 24-hr online, 6 coding problems. Qualifier: 6-hour window, 6 problems, increasing difficulty. Final Round: further filtering. Grand Finale: in-person at TCS India center, complex real-world problems. World's largest coding contest (537k+ in Season 12).",
+    prize:"$20,000 (top 3) — $10k / $6k / $4k split",
+    perks:"Direct hiring for TCS Ninja / Digital / Prime roles, global recognition, Guinness record contest",
+    winners:[
+      {ps:"Geometry / Graph traversal (beetle on cube surface)", sol:"Shortest path on cube surface using parameterized arc calculations — classic CodeVita hard-level PS"},
+      {ps:"Dynamic programming + string manipulation combos", sol:"Top coders use C++ with STL optimization; Python acceptable for medium Qs"},
+    ],
+    tip:"Solve mock MockVita rounds first. Easy→Medium→Hard order. C++ is fastest; Python fine for Qs 1-3. Graduating 2026–2029 eligible.",
+    link:"https://codevita.tcsapps.com/",
+    jobs:true
+  },
+  {
+    id:3, name:"Infosys HackWithInfy 2026", org:"Infosys", cat:"it",
+    focus:"AI-powered solutions, smart automation, generative AI",
+    date:"Round 1: Mar 6–8, 2026 | Grand Finale: July 2026 (48-hr, Infosys campus)",
+    status:"closed-r1",
+    rounds:["Round 1 – Online (IAP platform)","Round 2 – Face-to-face coding","Grand Finale – 48-hr team hackathon"],
+    roundDetail:"Round 1: Online individual coding on Infosys Assessment Platform (IAP), 3 problems easy-to-hard. Top performers advance. Round 2: Face-to-face coding contest; top 100 qualify for Grand Finale. Grand Finale: 48-hour team event at Infosys campus, teams formed by Infosys. Focus 2026: AI/GenAI solutions.",
+    prize:"₹3L (1st) + ₹1.5L (2nd) + ₹1L (3rd) + Champion of Champions individual award",
+    perks:"PPI for Specialist Programmer (₹9.5 LPA), internship at Infosys, AI/VR/AR project exposure",
+    winners:[
+      {ps:"2025 theme: SPACE (generative AI for space data analysis)", sol:"Teams building AI pipelines for satellite imagery + anomaly detection"},
+      {ps:"2026 theme: AI-powered solutions", sol:"Smart automation + GenAI solutions; focus on working prototypes not just ideas"},
+    ],
+    tip:"Register via college TPO — no direct self-registration. No CGPA cutoff. Focus: 3 coding Qs (DSA + greedy + DP) in Round 1.",
+    link:"https://www.infosys.com/careers/hackwithinfy.html",
+    jobs:true
+  },
+  {
+    id:4, name:"Microsoft Imagine Cup 2026", org:"Microsoft", cat:"bigtech",
+    focus:"AI/ML startups using Azure, SaaS, social impact tech",
+    date:"Opens: Sep 30, 2025 | MVP Deadline: Jan 9, 2026 | Semifinals: Feb–Mar 2026 | World Championship: Jun 2, 2026 (Microsoft Build)",
+    status:"semifinals",
+    rounds:["Registration + team formation","MVP Round (pitch deck + demo video)","Semifinals (live pitch, 5-min)","World Championship (Microsoft Build)"],
+    roundDetail:"Two paths: Scale (startup with traction, raised ≤$1M dilutive) and Launch (early stage, ≤$100k). MVP Round: 15-slide deck + demo video + pitch video. Semifinals: live 5-min pitch to judges, AI architecture review by Microsoft experts. Regional Finals in Singapore (Asia), Amsterdam (EMEA), Mexico City (Americas). Top 2 per region → World Championship at Microsoft Build. Must use min 2 Microsoft AI services.",
+    prize:"Scale: $100k + Satya Nadella mentorship + Microsoft for Startups partnership | Launch: $50k",
+    perks:"$5k Azure credits, MVP mentorship, Microsoft Build trip, global visibility",
+    winners:[
+      {ps:"2025 winner: Argus — AI-powered predictive safety system", sol:"Real-time computer vision + Azure AI for industrial accident prevention; full working product"},
+      {ps:"2022 winner: V Bionic (Saudi Arabia)", sol:"Hand paralysis rehabilitation device — hardware + Azure ML for motor recovery therapy"},
+      {ps:"2026 finalist: CopyFlag", sol:"Azure AI platform detecting AI-modified copies of creative designs + auto DMCA takedowns"},
+    ],
+    tip:"Both Microsoft AI services required. Judges score: Azure/AI implementation + inclusive design + viability + customer validation. Must show real user feedback.",
+    link:"https://imaginecup.microsoft.com/",
+    jobs:false
+  },
+  {
+    id:5, name:"Google Solution Challenge 2026", org:"Google (GDSC)", cat:"bigtech",
+    focus:"UN SDG-aligned solutions using Google Cloud / AI",
+    date:"Ongoing — closes June 2026",
+    status:"open",
+    rounds:["Solution development (GDSC club)","Regional GDSC submission","Global Top 100 selection","Top 10 finalist demo + pitch"],
+    roundDetail:"Build via local GDSC chapter. Submit solution addressing one of 17 UN SDGs using at least one Google technology (Firebase, Google Cloud, TF, Gemini). Global judges shortlist Top 100 → Top 10 finalists present live demos. Teams of 1–4 students.",
+    prize:"Top 3: $3k–$12k + Google swag | All Top 10 get Google mentorship + certificate",
+    perks:"Mentorship from Google engineers, GDSC recognition, GitHub portfolio, networking",
+    winners:[
+      {ps:"Climate change / SDG 13 — carbon tracking", sol:"AI-based personal carbon footprint tracker using Vertex AI + Firebase real-time sync"},
+      {ps:"SDG 3 – Good Health: rural telemedicine", sol:"Low-bandwidth video consultation app using TensorFlow Lite + offline-first architecture"},
+    ],
+    tip:"Must be a GDSC member. Use real Google APIs — Gemini, Vertex AI score highest in 2025–26. Show real user testing evidence.",
+    link:"https://developers.google.com/community/gdsc-solution-challenge",
+    jobs:false
+  },
+  {
+    id:6, name:"Amazon ML Challenge", org:"Amazon", cat:"bigtech",
+    focus:"Machine Learning, real Amazon datasets",
+    date:"Aug–Sep 2026",
+    status:"upcoming",
+    rounds:["Registration + dataset access","Model building phase (online)","Leaderboard ranking","Top team presentations"],
+    roundDetail:"Participants get access to real Amazon e-commerce / logistics datasets. Build ML models, submit predictions. Leaderboard competition. Top teams present their approach to Amazon ML scientists. Primarily for AI/DS students.",
+    prize:"Cash + certificates; top performers get interview opportunities",
+    perks:"Real Amazon datasets, direct Amazon interview pathway, ML portfolio proof",
+    winners:[
+      {ps:"Product feature extraction from images (past edition)", sol:"BLIP-2 + fine-tuned ResNet for multi-label product attribute extraction, top F1 score"},
+    ],
+    tip:"Focus on feature engineering over model complexity. Amazon datasets are messy — cleaning pipeline matters more than model choice.",
+    link:"https://www.amazon.jobs/en/teams/amazon-ml-challenge",
+    jobs:true
+  },
+  {
+    id:7, name:"Flipkart GRiD 8.0", org:"Flipkart", cat:"it",
+    focus:"SDE challenges, Applied AI, robotics, supply chain",
+    date:"Jul–Oct 2026",
+    status:"upcoming",
+    rounds:["Online Quiz (screening)","Level 1 – Coding round","Level 2 – Problem solving","Grand Finale (Flipkart campus)"],
+    roundDetail:"Level-wise elimination: Quiz → Coding round (DSA) → Applied problem solving → Grand Finale at Flipkart Bangalore campus. Teams of 2. Focus areas: Software Development, AI/ML track, and Robotics/Automation track. Past editions: 6.0 focused on supply chain + CV.",
+    prize:"₹1.5L+ in vouchers + Direct PPIs for high-pay roles",
+    perks:"Direct Pre-Placement Interview for SDE roles (₹30–50 LPA range), Flipkart goodies",
+    winners:[
+      {ps:"Computer vision for warehouse automation (GRiD 6.0)", sol:"YOLO-based real-time object detection + barcode scanner for conveyor belt QC"},
+      {ps:"AI-based personalization engine", sol:"Collaborative filtering + session-based recommendation using transformer embeddings"},
+    ],
+    tip:"Form team early. CV/robotics track is less competitive than SDE. Grid 8.0 likely to focus on GenAI + supply chain fusion.",
+    link:"https://unstop.com/flipkart-grid",
+    jobs:true
+  },
+  {
+    id:8, name:"JP Morgan Code for Good 2026", org:"JP Morgan Chase", cat:"finance",
+    focus:"Tech solutions for social good, NGO problems",
+    date:"2026 (typically May–Jun)",
+    status:"upcoming",
+    rounds:["Online application (resume + coding test)","Selection for 24-hr Hackathon","Hackathon day (24-hr, NGO PS)","Presentation to JP Morgan panel"],
+    roundDetail:"Shortlisted students attend a 24-hour in-person hackathon. Real NGO problem statements given at start of event. Teams of 5–6 build working software. Judged by JP Morgan technologists. Winners get internship/FTE pathway. Targets pre-final year students.",
+    prize:"Internship pathway + FTE consideration for software engineering roles",
+    perks:"Networking with JP Morgan engineers, NGO social impact portfolio, high conversion to job offers",
+    winners:[
+      {ps:"Elderly care coordination platform (NGO)", sol:"React + Node.js web app with volunteer matching + appointment scheduler; won 2023 edition"},
+      {ps:"Microfinance loan tracking for rural NGO", sol:"Mobile-first PWA with offline sync, BNPL-style repayment tracker for low-connectivity areas"},
+    ],
+    tip:"JP Morgan values clean code + good UX over complex AI. Ship a working MVP with demo data. Show empathy for the end user.",
+    link:"https://www.jpmorganchase.com/careers/explore-opportunities/programs/tfsg-hackathons",
+    jobs:true
+  },
+  {
+    id:9, name:"IBM Call for Code 2026", org:"IBM", cat:"ai",
+    focus:"Climate change + equitable resources using IBM WatsonX / Cloud",
+    date:"Feb–Mar 2026 (results)",
+    status:"ongoing",
+    rounds:["Ideation + solution submission","Regional judging","Global shortlist (Top 5)","Open source contribution + final demo"],
+    roundDetail:"Global challenge: build open-source solutions for climate change. Must use IBM WatsonX (GenAI) or IBM Cloud. Individual or team (up to 5). Judged on: problem clarity, innovation, open-source quality, feasibility, and social impact. Top 5 globally demo live.",
+    prize:"$200k project funding for global winner + IBM incubation support",
+    perks:"Open-source credibility, IBM mentor access, GitHub visibility, potential for real deployment",
+    winners:[
+      {ps:"Wildfire early warning (2023)", sol:"IBM WatsonX + satellite imagery API for fire risk scoring, deployed as open-source on GitHub"},
+      {ps:"Flood prediction for vulnerable communities", sol:"ML pipeline on IBM Cloud + IoT sensor aggregation, FOSS solution adopted by NGO"},
+    ],
+    tip:"Open-source is mandatory — maintain a clean GitHub repo. WatsonX integration is required and judged heavily.",
+    link:"https://developer.ibm.com/callforcode/",
+    jobs:false
+  },
+  {
+    id:10, name:"Google Summer of Code (GSoC) 2026", org:"Google", cat:"bigtech",
+    focus:"Open source contributions to top FOSS organizations",
+    date:"Jan–Aug 2026 (Active now — proposal deadline ~Apr)",
+    status:"open",
+    rounds:["Org list published (Jan)","Proposal writing (Feb–Apr)","Community bonding (May)","Coding period (Jun–Aug)","Final evaluation (Aug)"],
+    roundDetail:"Individual project. Choose an org (Apache, Mozilla, TensorFlow, etc.), discuss with mentors, submit a detailed proposal. Google evaluates proposals + mentor assessment. Selected contributors work ~175 hrs (medium) or ~350 hrs (large project) with weekly check-ins. Must pass midterm + final evaluations.",
+    prize:"$1,500–$6,600 USD stipend (project size dependent); ~₹1.2L+ for Indian contributors",
+    perks:"FOSS portfolio, strong resume signal, open-source community network, potential for post-GSoC roles",
+    winners:[
+      {ps:"TF-Lite Android model optimization (past edition)", sol:"New quantization pipeline reducing model size by 40% — merged into TensorFlow official repo"},
+      {ps:"Apache Beam connector for streaming IoT", sol:"Java + Python SDK extension for real-time IoT pipeline; widely used post-GSoC"},
+    ],
+    tip:"Submit proposals to 2–3 orgs max. Strong proposal > strong code skill. Contact mentors early (Jan–Feb).",
+    link:"https://summerofcode.withgoogle.com/",
+    jobs:false
+  },
+  {
+    id:11, name:"KAVACH Cybersecurity Hackathon", org:"MoE-MIC / AICTE / BPR&D", cat:"gov",
+    focus:"National cybersecurity — deepfakes, dark web, women's safety, malware",
+    date:"Feb–Apr 2026",
+    status:"completed-2025",
+    rounds:["Online problem statement selection","Idea submission","Shortlist screening","36-hr Grand Finale (nodal center)"],
+    roundDetail:"Teams of 6 (min 1 female), all from same institution. Problems from BPR&D cover: deepfake detection, CCTV analytics with AI/ML, dark web monitoring, women's safety apps, mobile forensics. Idea submitted online → shortlisted teams go to Finale centers.",
+    prize:"Up to ₹1L per winning team per PS",
+    perks:"BPR&D recognition, potential deployment by police forces, cybersecurity career signal",
+    winners:[
+      {ps:"Deepfake detection for law enforcement", sol:"EfficientNet + temporal attention model for video deepfake detection; F1 > 0.92"},
+      {ps:"Women's safety app with SOS + AI threat assessment", sol:"Android app with fall detection (accelerometer), geofencing, and LLM-based threat analysis"},
+    ],
+    tip:"Focus on deployable, lightweight solutions — BPR&D wants tools that work on police hardware, not research demos.",
+    link:"https://kavach.mic.gov.in/",
+    jobs:false
+  },
+  {
+    id:12, name:"Google Girl Hackathon", org:"Google India", cat:"bigtech",
+    focus:"Coding + ideation using Google Cloud, AI, Android",
+    date:"Feb–Mar 2026",
+    status:"upcoming",
+    rounds:["Online coding challenge (Round 1)","Hackathon phase — build solution","Final presentation to Google panel"],
+    roundDetail:"Women-only competition (UG/Masters CS or related). Round 1: online coding assessment. Round 2: 24–48hr hackathon — teams build tech solutions for societal issues using Google Cloud / Android / AI. Final presentation. Google supports shortlisted teams with Cloud credits and mentorship.",
+    prize:"Google swag + certificates + internship pathways",
+    perks:"Google Cloud credits, mentorship, networking, strong resume signal for Google hiring",
+    winners:[
+      {ps:"Accessibility tool for visually impaired (2024)", sol:"Android TFLite app with real-time scene description using MobileNet + Google Cloud TTS"},
+    ],
+    tip:"Women students in UG/Masters only. Use Android + Firebase combo for highest scoring potential.",
+    link:"https://buildyourfuture.withgoogle.com/",
+    jobs:true
+  },
+  {
+    id:13, name:"EY Open Science AI Challenge", org:"Ernst & Young", cat:"finance",
+    focus:"Climate tech, ESG analytics, ML for sustainability",
+    date:"Jan–Apr 2026",
+    status:"completed",
+    rounds:["Problem statement release","Solution development","Submission + online evaluation","Finalist presentations (global)"],
+    roundDetail:"Global open challenge. Teams build AI/ML solutions for climate and ESG problems. EY provides datasets. Submissions evaluated by EY data science teams. Top teams present solutions to global EY panel. Focus: reproducible, well-documented code.",
+    prize:"Cash prizes + ESG project exposure + EY recognition certificate",
+    perks:"Global ESG network, strong portfolio for sustainability + finance roles, EY hiring signal",
+    winners:[
+      {ps:"Carbon emission forecasting using satellite data", sol:"XGBoost + satellite NDVI time-series for per-sector emission projection with 87% accuracy"},
+    ],
+    tip:"EY values business storytelling + code quality equally. Jupyter notebooks must be clean and reproducible.",
+    link:"https://www.ey.com/en_gl/data-science-challenge",
+    jobs:false
+  },
+  {
+    id:14, name:"YUVAi Global Youth Challenge", org:"MeitY / IndiaAI", cat:"gov",
+    focus:"AI for social good, India-centric use cases",
+    date:"Feb 2026 (Summit)",
+    status:"completed",
+    rounds:["Online ideation submission","Regional shortlisting","Global summit demo (Feb 2026)"],
+    roundDetail:"Youth (18–35) submit AI-for-good ideas. IndiaAI and MeitY shortlist and invite to the global summit for demo. Strong India-context bias — MSME, agriculture, governance use cases prioritized.",
+    prize:"₹85 Lakhs total prize pool + Global showcase",
+    perks:"IndiaAI network, MeitY recognition, investor + government visibility",
+    winners:[
+      {ps:"AI for MSME credit scoring", sol:"Lightweight ML model using GST + bank statement data for rural MSME loan eligibility"},
+    ],
+    tip:"IndiaAI strongly favors Bharat-specific problems. Reference ONDC, UPI, DigiLocker as tech layers.",
+    link:"https://impact.indiaai.gov.in/events/yuvai",
+    jobs:false
+  },
+  {
+    id:15, name:"IndiaAI Innovation Challenge 2026", org:"IndiaAI / MeitY", cat:"gov",
+    focus:"MSME and AYUSH sector AI solutions",
+    date:"Jan–Mar 2026",
+    status:"completed",
+    rounds:["Concept submission","Technical review","Prototype development","Demo + evaluation"],
+    roundDetail:"Focused specifically on MSME and AYUSH (traditional medicine) sectors. Teams build working AI prototypes. IndiaAI evaluates for deployability and real-world impact. Selected teams can receive work orders for deployment.",
+    prize:"Up to ₹1 Crore work contract (not just prize money — actual deployment contract)",
+    perks:"Real govt work order, deployment opportunity, IndiaAI ecosystem entry",
+    winners:[
+      {ps:"AI for Ayurvedic plant identification", sol:"CNN-based mobile app for herb ID + recommendation using curated AYUSH dataset"},
+    ],
+    tip:"This is a work contract, not just a prize — submit only if you can deliver a deployable product post-competition.",
+    link:"https://indiaai.gov.in/article/indiaai-innovation-challenge-2026",
+    jobs:false
+  },
+  {
+    id:16, name:"Walmart CodeHers 2025", org:"Walmart Global Tech", cat:"it",
+    focus:"Software development — women-only track",
+    date:"Mar 2025 (completed)",
+    status:"completed",
+    rounds:["Online coding assessment","Technical interview","Hackathon day"],
+    roundDetail:"Women-only SDE hackathon. Online coding round → selected candidates invited for technical interview → final hackathon. Targets pre-final year women engineers. Strong conversion to PPIs and internships.",
+    prize:"PPI opportunities up to ₹27 LPA + ₹1L+ stipend",
+    perks:"Walmart Global Tech internship, direct FTE pathway, strong resume brand",
+    winners:[{ps:"Retail inventory optimization (SDE track)", sol:"Distributed microservice for real-time stock rebalancing using Kafka + Java Spring Boot"}],
+    tip:"Women-only. Strong focus on system design in hackathon round — practice LLD.",
+    link:"https://unstop.com/competitions/crp-codehers-2025-walmart-global-tech-india-1372066",
+    jobs:true
+  },
+  {
+    id:17, name:"Adobe India Hackathon 2025", org:"Adobe", cat:"dev",
+    focus:"Document intelligence, Creative AI, PDFs",
+    date:"Jul–Sep 2025 (completed)",
+    status:"completed",
+    rounds:["Problem statement selection","Online submission of working prototype","Shortlist review","Hackathon finale (Adobe campus)"],
+    roundDetail:"Problem statements focused on document intelligence, creative tools, PDF manipulation, and generative AI for creative workflows. Teams build working prototypes. Adobe engineers evaluate technical depth + creativity.",
+    prize:"MacBook Air + ₹1L/month internship at Adobe",
+    perks:"Adobe internship, MacBook prize, direct hiring signal, patents possible",
+    winners:[
+      {ps:"AI-powered PDF summarization with multi-document cross-referencing", sol:"LangChain + Claude API for multi-PDF QA with citation tracking; top solution 2024"},
+    ],
+    tip:"Adobe values creative coding. Use Adobe PDF Services API + GenAI — bonus points for Adobe tech stack usage.",
+    link:"https://unstop.com/hackathons/crp-adobe-india-hackathon-adobe-1483364",
+    jobs:true
+  },
+  {
+    id:18, name:"Cognizant Technoverse 2026", org:"Cognizant", cat:"it",
+    focus:"AI, GenAI, industry tech challenges",
+    date:"2026 (dates TBC)",
+    status:"upcoming",
+    rounds:["Online ideation","Technical screening","Hackathon day","Final presentation"],
+    roundDetail:"Teams submit ideas aligned with Cognizant's AI and digital transformation focus areas. Shortlisted teams attend hackathon at Cognizant development centers. Final judging by Cognizant leaders.",
+    prize:"Cash prizes + internship opportunities",
+    perks:"Direct internship and FTE pathway, Cognizant brand recognition",
+    winners:[{ps:"GenAI-powered ITSM ticket auto-resolution", sol:"RAG pipeline using Mistral + FAISS for IT helpdesk automation, 85% auto-resolve rate"}],
+    tip:"Focus on enterprise-grade GenAI use cases — Cognizant clients are large enterprises.",
+    link:"https://unstop.com/",
+    jobs:true
+  },
+  {
+    id:19, name:"Capgemini Tech Challenge", org:"Capgemini", cat:"it",
+    focus:"15+ IT tracks — cloud, AI, cybersecurity, sustainability",
+    date:"2026 (TBC)",
+    status:"upcoming",
+    rounds:["Online quiz","Coding round","Case study / presentation","Grand finale"],
+    roundDetail:"Multiple tracks available. Online quiz for initial screening, followed by coding challenge, then case study presentation. Grand finale is in-person at Capgemini center with jury from leadership. 15+ technology tracks.",
+    prize:"₹15 Lakhs total + career opportunities",
+    perks:"Job offer pathway, global Capgemini network, multi-track options",
+    winners:[{ps:"Sustainable cloud migration for legacy system", sol:"Green cloud architecture using AWS + carbon footprint API; won sustainability track"}],
+    tip:"Pick a niche track — less competition. Sustainability + AI convergence tracks are trending.",
+    link:"https://unstop.com/",
+    jobs:true
+  },
+  {
+    id:20, name:"Deloitte Hacksplosion 2026", org:"Deloitte", cat:"finance",
+    focus:"GenW.AI platform, enterprise GenAI",
+    date:"2026 (dates TBC)",
+    status:"upcoming",
+    rounds:["Registration + online screening","Build phase (GenW.AI platform)","Demo + presentation","Jury evaluation"],
+    roundDetail:"Teams build solutions using Deloitte's GenW.AI platform. Focus on enterprise AI use cases — audit automation, financial analytics, risk assessment. Deloitte provides platform access and mentor support.",
+    prize:"Cash prizes + certificates; internship pathways for top performers",
+    perks:"Deloitte brand + GenAI portfolio, potential internship conversion",
+    winners:[{ps:"Automated financial audit with GenAI", sol:"LLM-based audit trail analysis with anomaly flagging; deployed on Deloitte GenW.AI"}],
+    tip:"Learn Deloitte's GenW.AI platform before registering — it's their proprietary system and judges value native usage.",
+    link:"https://unstop.com/",
+    jobs:true
+  },
+  {
+    id:21, name:"Cisco Ideathon 2025", org:"Cisco", cat:"ai",
+    focus:"Networking, cybersecurity, AI-driven infrastructure",
+    date:"Jun 2025 (completed)",
+    status:"completed",
+    rounds:["Online ideation submission","Shortlist review","Live presentation (Cisco panel)"],
+    roundDetail:"Submit innovative ideas addressing Cisco's focus areas: network automation, cybersecurity AI, cloud infrastructure. Shortlisted teams present live. Strong focus on practical, enterprise-deployable solutions.",
+    prize:"Internships + full-time placement consideration",
+    perks:"Cisco network, internship at Cisco India centers, CCNA/CCNP career pathway",
+    winners:[{ps:"AI-based network anomaly detection", sol:"LSTM-based traffic pattern anomaly detector with Cisco SecureX API integration"}],
+    tip:"Reference Cisco's actual products (SecureX, Catalyst, Meraki) in your solution — shows product knowledge.",
+    link:"https://www.cisco.com/c/m/en_in/customer-experience-academy.html",
+    jobs:true
+  },
+  {
+    id:22, name:"Salesforce Futureforce AI Challenge", org:"Salesforce", cat:"dev",
+    focus:"Agentforce AI, Salesforce Einstein, CRM automation",
+    date:"2026 (ongoing)",
+    status:"open",
+    rounds:["Registration + team formation","Build on Salesforce platform","Submit working solution","Finalist demo to Salesforce leaders"],
+    roundDetail:"Build AI solutions using Salesforce Agentforce, Einstein AI, or Apex. Must demonstrate real CRM or business automation use case. Judged by Salesforce engineers. Top teams may present at Dreamforce.",
+    prize:"Internship + potential travel to Dreamforce conference",
+    perks:"Salesforce internship pathway, Trailhead certifications, Dreamforce invite",
+    winners:[{ps:"AI agent for sales pipeline automation", sol:"Agentforce bot with Einstein lead scoring + automated email sequences; 60% pipeline velocity improvement"}],
+    tip:"Get Salesforce Developer Edition + Trailhead certifications before building. Agentforce experience is the key differentiator.",
+    link:"https://unstop.com/",
+    jobs:true
+  },
+  {
+    id:23, name:"Juspay Hiring Challenge 2025", org:"Juspay", cat:"dev",
+    focus:"Functional programming, payments, fintech",
+    date:"Jul–Aug 2025 (completed)",
+    status:"completed",
+    rounds:["Online coding challenge (Haskell/PureScript/Rust focus)","Technical interview","Offer"],
+    roundDetail:"Pure hiring challenge. Focus on functional programming languages — Haskell, PureScript, Rust. Advanced DSA + type theory problems. Very niche but very high conversion to offer.",
+    prize:"₹40k stipend internship + FTE ₹21–27 LPA",
+    perks:"Work on real payment infrastructure used by Flipkart/Amazon India, strong FP skills signal",
+    winners:[{ps:"Functional reactive UI for payment flows", sol:"PureScript + Halogen for type-safe payment form with real-time validation"}],
+    tip:"Learn Haskell basics before applying — most candidates filter out here. Juspay values FP purity over OOP background.",
+    link:"https://unstop.com/competitions/crp-juspay-hiring-challenge-2025-juspay-1466934",
+    jobs:true
+  },
+];
+
+let activeFilter = 'all';
+
+function setFilter(cat, el) {
+  activeFilter = cat;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+
+function toggleDetail(id) {
+  const panel = document.getElementById('dp-' + id);
+  const btn = document.getElementById('eb-' + id);
+  if (panel.classList.contains('open')) {
+    panel.classList.remove('open');
+    btn.textContent = 'Show details ▾';
+  } else {
+    panel.classList.add('open');
+    btn.textContent = 'Hide details ▴';
+  }
+}
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase();
+  let filtered = DATA;
+  if (activeFilter === 'job') {
+    filtered = filtered.filter(d => d.jobs);
+  } else if (activeFilter !== 'all') {
+    filtered = filtered.filter(d => d.cat === activeFilter);
+  }
+  if (q) {
+    filtered = filtered.filter(d =>
+      d.name.toLowerCase().includes(q) ||
+      d.org.toLowerCase().includes(q) ||
+      d.focus.toLowerCase().includes(q) ||
+      d.prize.toLowerCase().includes(q)
+    );
+  }
+
+  document.getElementById('cnt').textContent = filtered.length;
+
+  const catLabels = {bigtech:'Big Tech',it:'IT Services',finance:'Finance',ai:'AI/Cloud',gov:'Govt/India',dev:'Dev Platform'};
+  const statusColors = {open:'#0C447C',upcoming:'#27500A',completed:'#5F5E5A','completed-2025':'#5F5E5A','closed-r1':'#993C1D',semifinals:'#633806',ongoing:'#3C3489'};
+  const statusLabels = {open:'Open now',upcoming:'Upcoming',completed:'Completed','completed-2025':'Done 2025','closed-r1':'R1 closed',semifinals:'Semifinals',ongoing:'Ongoing'};
+
+  const grid = document.getElementById('grid');
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="no-results" style="grid-column:1/-1">No opportunities match your filter. Try a different keyword.</div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(d => `
+    <div class="card" id="card-${d.id}">
+      <div class="card-head">
+        <div style="flex:1;min-width:0">
+          <div class="card-title">${d.name}</div>
+          <div class="card-org">${d.org}</div>
+        </div>
+        <span class="cat-badge cat-${d.cat}">${catLabels[d.cat]||d.cat}</span>
+      </div>
+      <div class="divider"></div>
+      <div class="card-body">
+        <div class="meta-row">
+          <span class="meta-pill date">Date: ${d.date.split('|')[0].trim()}</span>
+          <span class="meta-pill" style="color:${statusColors[d.status]}">${statusLabels[d.status]||d.status}</span>
+        </div>
+        <div class="focus-text">${d.focus}</div>
+        <div class="rounds-label">Rounds (${d.rounds.length})</div>
+        <div class="rounds-list">
+          ${d.rounds.map((r,i) => `<span class="round-tag">R${i+1}: ${r.length>22?r.substring(0,22)+'…':r}</span>`).join('')}
+        </div>
+        <div class="prize">${d.prize}</div>
+        <button class="expand-btn" id="eb-${d.id}" onclick="toggleDetail(${d.id})">Show details ▾</button>
+      </div>
+      <div class="detail-panel" id="dp-${d.id}">
+        <div class="detail-section">
+          <div class="detail-label">Round structure</div>
+          <div class="detail-text">${d.roundDetail}</div>
+        </div>
+        <div class="detail-section">
+          <div class="detail-label">Perks & career value</div>
+          <div class="detail-text">${d.perks}</div>
+        </div>
+        <div class="detail-section">
+          <div class="detail-label">Past winning PS + solutions</div>
+          ${d.winners.map(w => `
+            <div class="winner-box">
+              <div class="winner-ps">PS: ${w.ps}</div>
+              <div class="winner-sol">Solution: ${w.sol}</div>
+            </div>
+          `).join('')}
+        </div>
+        <div class="detail-section">
+          <div class="detail-label">Pro tip for PRO BOTS</div>
+          <div class="detail-text tip-box">${d.tip}</div>
+        </div>
+        <a href="${d.link}" class="official-link" target="_blank">Official page →</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+render();
+</script>
