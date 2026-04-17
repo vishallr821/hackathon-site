@@ -903,6 +903,411 @@ const DATA = [
     link:"https://unstop.com/competitions/crp-juspay-hiring-challenge-2025-juspay-1466934",
     jobs:true
   },
+  {
+    id:24, name:"NASSCOM Hackathon", org:"NASSCOM", cat:"it",
+    focus:"AI, digital transformation, industry tech solutions",
+    date:"Mar–Jul 2027 (Registration: Feb 2027)",
+    status:"upcoming",
+    rounds:["Online Screening","Prototype Submission","Regional Demo","Grand Finale"],
+    roundDetail:"3 rounds: Online screening of ideas → Working prototype submission judged by NASSCOM panel → Regional demo at major cities (Delhi, Bangalore) → Grand Finale. Teams of 2–5. Focus on industry-grade solutions addressing India's digital economy challenges. NASSCOM member companies sponsor problem statements.",
+    prize:"Cash prizes + NASSCOM industry recognition + startup ecosystem access",
+    perks:"NASSCOM network (3000+ member companies), industry visibility, startup incubation pathway, MNC recruiter access",
+    winners:[
+      {ps:"AI-driven skill gap analysis for IT workforce", sol:"NLP pipeline mapping job descriptions to skill profiles, deployed as SaaS dashboard for HR teams"},
+      {ps:"Digital supply chain transparency tool", sol:"Blockchain-lite ledger + REST API for end-to-end vendor tracking, won 2025 edition"},
+    ],
+    tip:"NASSCOM judges are industry veterans — business viability matters as much as tech. Include ROI and market size in your pitch.",
+    link:"https://nasscom.in",
+    jobs:false
+  },
+  {
+    id:25, name:"TechGig Code Gladiators", org:"TechGig (Times Group)", cat:"it",
+    focus:"Competitive coding — DSA, algorithms, full-stack problem solving",
+    date:"Apr–Jun 2027 (Registration: Mar 2027)",
+    status:"upcoming",
+    rounds:["Online Coding Round 1","Semi-Final (timed contest)","Grand Finale (in-person)"],
+    roundDetail:"3 rounds: Online coding round open to all registered users on TechGig platform → Semi-final with harder algorithmic problems under time pressure → Grand Finale held in Delhi/Bangalore in-person. Individual participation. Problems cover DSA, system design scenarios, and language-specific challenges. One of India's largest coding contests with 3L+ participants annually.",
+    prize:"₹20 Lakhs total prize pool + Gold Gladiator title",
+    perks:"TechGig leaderboard visibility (seen by 500+ companies), certificate, strong resume signal for IT companies",
+    winners:[
+      {ps:"Graph shortest path with dynamic edge weights (2024)", sol:"Modified Dijkstra with lazy deletion heap, O((V+E)logV) — C++ solution with custom comparator"},
+      {ps:"String compression + pattern matching combo (semi-final)", sol:"KMP + LZ77 hybrid approach with bitmasking optimization"},
+    ],
+    tip:"TechGig platform uses its own IDE — practice on it before the contest. Speed matters: first solve easy Qs fully, then attempt hard for partial credit.",
+    link:"https://www.techgig.com",
+    jobs:false
+  },
+  {
+    id:26, name:"Accenture Innovation Challenge", org:"Accenture", cat:"it",
+    focus:"AI, cloud, sustainability, enterprise digital transformation",
+    date:"Early 2027 (Jan–Feb registration, Finale: Mar–Apr)",
+    status:"upcoming",
+    rounds:["Idea Submission","Mentoring Round","Regional Finale","Global Grand Finale"],
+    roundDetail:"3 rounds: Teams submit innovation idea aligned with Accenture's focus areas (AI, cloud, sustainability, metaverse) → Shortlisted teams get Accenture mentor for 2 weeks to refine prototype → Regional Finale (India + Global tracks) → Top teams from each region compete globally. Teams of 2–4. Must incorporate at least one cloud technology.",
+    prize:"Cash prizes + potential Accenture internship/FTE pathway + global recognition",
+    perks:"Accenture mentor pairing, cloud credits, global network, strong hiring signal for consulting + tech roles",
+    winners:[
+      {ps:"AI-powered carbon footprint tracker for enterprises (2024)", sol:"Azure ML + Power BI dashboard aggregating Scope 1/2/3 emissions; deployed as PoC at Accenture client"},
+      {ps:"Intelligent document processing for financial services", sol:"OCR + LLM pipeline for auto-extracting structured data from unstructured financial PDFs"},
+    ],
+    tip:"Accenture loves solutions that solve enterprise problems, not just consumer apps. Frame your idea as a B2B SaaS tool for a specific industry vertical.",
+    link:"https://www.accenture.com/in-en/careers",
+    jobs:true
+  },
+  {
+    id:27, name:"Zoho Hackathon", org:"Zoho Corporation", cat:"dev",
+    focus:"Product building, full-stack dev, enterprise SaaS, UI/UX",
+    date:"Mid 2027 (varies annually)",
+    status:"upcoming",
+    rounds:["Online Build Round","In-person Demo at Zoho campus"],
+    roundDetail:"2–3 rounds: Coding/building challenge online → Shortlisted teams invited to Zoho campus (Chennai or Tenkasi, Tamil Nadu) for in-person demo. Offline/Hybrid format. Teams of 2–5. Zoho prizes expertise in its own technology stack — familiarity with Zoho Creator, Zoho Cliq, and Zoho APIs is a strong differentiator. Known for extremely high hiring conversion.",
+    prize:"Direct job offers / PPIs for top performers + cash prizes",
+    perks:"Zoho job offer (₹6–12 LPA), campus visit to Zoho's Tamil Nadu HQ, long-term career at one of India's top product companies",
+    winners:[
+      {ps:"CRM pipeline automation tool (internal product challenge)", sol:"Built using Zoho Creator + Deluge scripting; automated lead scoring with custom ML model"},
+      {ps:"Collaborative project management mini-app", sol:"Real-time web app using Zoho's Catalyst serverless + WebSocket — won 2023 edition"},
+    ],
+    tip:"Learn Zoho Creator and Zoho APIs before applying — judges are Zoho engineers who value their own stack. Tamil Nadu location is their heartland; strong local presence helps.",
+    link:"https://www.zoho.com/careers",
+    jobs:true
+  },
+  {
+    id:28, name:"Wipro TalentNext Hackathon", org:"Wipro", cat:"it",
+    focus:"Digital transformation, AI, cloud, enterprise solutions",
+    date:"Expected 2026–2027 (dates TBC)",
+    status:"upcoming",
+    rounds:["Online Registration + Coding Test","Problem Statement Round","Grand Finale"],
+    roundDetail:"2 rounds: Online coding/aptitude test for initial screening → Problem statement round where teams build working prototypes aligned with Wipro's digital transformation themes → Grand Finale at Wipro development center. Focus areas include AI automation, cloud migration, and sustainable tech. Part of Wipro's TalentNext campus engagement program.",
+    prize:"Cash prizes + Wipro hiring pipeline visibility + certificates",
+    perks:"Wipro career pathway, WILP (Work Integrated Learning Program) eligibility, strong IT industry signal",
+    winners:[
+      {ps:"AI-based IT incident auto-resolution (2024)", sol:"BERT fine-tuned on ITSM tickets for ticket classification + auto-routing; 78% resolution without human intervention"},
+    ],
+    tip:"Wipro values solutions that can integrate with existing enterprise IT systems. Avoid over-engineering — clean, maintainable code beats complex ML demos.",
+    link:"https://careers.wipro.com/",
+    jobs:true
+  },
+  {
+    id:29, name:"HCLTech Hackathon", org:"HCLTech", cat:"it",
+    focus:"Digital banking, fintech, Java, enterprise engineering",
+    date:"Expected 2026–2027",
+    status:"upcoming",
+    rounds:["Hack Submission","In-person Interview / Demo"],
+    roundDetail:"2 rounds: Teams submit a working hack addressing HCLTech's domain problem statements (banking tech, digital infrastructure, Java/cloud solutions) → Shortlisted teams interview/demo at HCLTech center. Often run as part of HCLTech's campus hiring engagement. Strong focus on Java, Spring Boot, and enterprise-grade coding.",
+    prize:"Career recognition + HCLTech job offer consideration",
+    perks:"HCLTech hiring pathway, exposure to real enterprise banking projects, strong Java/fintech resume signal",
+    winners:[
+      {ps:"Digital Banking microservices refactor", sol:"Spring Boot + Kafka event-driven architecture replacing monolithic banking transaction system"},
+    ],
+    tip:"HCLTech favors Java Spring Boot expertise above all else. Frame solutions as enterprise-deployable, not just demos.",
+    link:"https://www.hcltech.com/careers",
+    jobs:true
+  },
+  {
+    id:30, name:"Amazon HackOn", org:"Amazon", cat:"bigtech",
+    focus:"Full-stack engineering, cloud, ML, product innovation",
+    date:"May–Jul 2026",
+    status:"upcoming",
+    rounds:["Online Coding + Aptitude","Hackathon Day (24-hr build)","Final Presentation to Amazon panel"],
+    roundDetail:"3 rounds: Online screening with coding + aptitude questions on Amazon's platform → 24-hour online hackathon where teams build product prototypes using AWS services → Final demo/presentation to Amazon engineers. Teams of 2–5. Distinct from Amazon ML Challenge — HackOn is broader (full-stack + product + ML), open to all engineering streams.",
+    prize:"Cash prizes + Amazon interview/internship pathway",
+    perks:"Amazon SDE interview fast-track, AWS credits, Amazon swag, resume visibility to Amazon recruiters",
+    winners:[
+      {ps:"Delivery route optimizer using real map data (2024)", sol:"AWS Lambda + DynamoDB + Google Maps API; genetic algorithm for multi-stop TSP optimization"},
+      {ps:"AI-powered product review summarizer (2023)", sol:"Llama-2 fine-tuned on Amazon review corpus; deployed on SageMaker with API Gateway"},
+    ],
+    tip:"Use AWS services prominently — judges are Amazon engineers. HackOn values working products over polished slides. Use free-tier AWS generously.",
+    link:"https://amazon.jobs/en/teams/hackon",
+    jobs:true
+  },
+  {
+    id:31, name:"Google AI / Gemini Hackathon", org:"Google", cat:"bigtech",
+    focus:"Generative AI, Gemini API, Google Cloud AI, real-world AI apps",
+    date:"Ongoing — multiple events throughout 2026",
+    status:"open",
+    rounds:["Registration + project idea","Build phase (use Gemini API)","Online submission + evaluation","Top projects featured / prizes"],
+    roundDetail:"Developer-focused hackathon series run through Google AI Studio and Google Cloud. Build applications using Google's Gemini API, Vertex AI, or other Google AI tools. Multiple themed editions run year-round (e.g., Google AI Hackathon on Devpost). Judged on creativity, Gemini API usage, real-world impact, and technical execution. Individual or team.",
+    prize:"Google Cloud credits + cash/swag + featured in Google AI showcase",
+    perks:"Google AI community recognition, Gemini API credits, portfolio piece with real Google tech, hiring signal",
+    winners:[
+      {ps:"Multimodal AI assistant for accessibility (2025)", sol:"Gemini Pro Vision + TTS for real-time scene description and navigation assistance for visually impaired"},
+      {ps:"AI code reviewer with security focus", sol:"Gemini API + AST parsing for static analysis + vulnerability detection; integrated as VSCode extension"},
+    ],
+    tip:"Gemini API is free-tier accessible — use it fully. Multimodal use cases (vision + text + code) score highest. Ship something deployable, not just a Colab notebook.",
+    link:"https://ai.google.dev/",
+    jobs:false
+  },
+  {
+    id:32, name:"Microsoft Code Without Barriers", org:"Microsoft", cat:"bigtech",
+    focus:"Inclusive tech, accessibility, social impact using Microsoft AI",
+    date:"April 2026",
+    status:"upcoming",
+    rounds:["Application + idea submission","Build phase with Microsoft mentors","Final demo to Microsoft panel"],
+    roundDetail:"Diversity-focused hackathon by Microsoft India. Open to underrepresented groups in tech (women, LGBTQ+, differently-abled, first-gen college students). Teams build solutions for accessibility and social inclusion using Microsoft Azure, Teams, or Power Platform. Microsoft assigns mentors to shortlisted teams. Final demo to Microsoft engineering leads.",
+    prize:"Microsoft swag + Azure credits + internship pathway consideration",
+    perks:"Microsoft mentor pairing, Azure credits, inclusion-focused community network, strong hiring signal for Microsoft India",
+    winners:[
+      {ps:"Communication aid for non-verbal autism spectrum users", sol:"Azure Cognitive Services + custom AAC board web app with gaze tracking support"},
+    ],
+    tip:"Microsoft values solutions that align with their Accessibility commitment and responsible AI principles. Reference Microsoft's AI for Accessibility program in your pitch.",
+    link:"https://www.microsoft.com/en-us/events/",
+    jobs:true
+  },
+  {
+    id:33, name:"Apple Swift Student Challenge", org:"Apple", cat:"bigtech",
+    focus:"iOS/macOS app development using Swift, SwiftUI, Swift Playgrounds",
+    date:"Feb–Mar 2027 (Submission: ~Feb 2027)",
+    status:"upcoming",
+    rounds:["Build your Swift Playground app","Submit to Apple for review","Winners notified + WWDC invite"],
+    roundDetail:"Individual challenge. Build a compelling interactive experience using Swift Playgrounds in Xcode. Apple judges evaluate: technical accomplishment, creativity, and content. Winners are invited to Apple's WWDC (Worldwide Developers Conference) in Cupertino, California. Prize includes AirPods Max and a trip to Apple Park. One of the most prestigious student dev recognition programs globally.",
+    prize:"AirPods Max + trip to Apple Park, Cupertino + WWDC attendance",
+    perks:"WWDC developer conference access, Apple engineer networking, App Store credibility, exceptional resume signal",
+    winners:[
+      {ps:"Interactive AR science education experience (2024)", sol:"ARKit + SwiftUI Playground teaching physics concepts through real-time 3D simulations"},
+      {ps:"Accessibility-first music learning app (2023)", sol:"SwiftUI + Core Audio; adapted interface for hearing-impaired learners using haptic feedback"},
+    ],
+    tip:"Apple judges love creativity + polish above all. Your playground must be self-contained and work offline. Focus on one killer interaction — don't build feature-bloat.",
+    link:"https://developer.apple.com/swift-student-challenge/",
+    jobs:false
+  },
+  {
+    id:34, name:"Meta Hacker Cup", org:"Meta (Facebook)", cat:"bigtech",
+    focus:"Competitive programming — algorithms, math, advanced DSA",
+    date:"Jun–Oct 2027 (multiple rounds)",
+    status:"upcoming",
+    rounds:["Qualification Round (online, 72-hr)","Round 1 (3-hr, online)","Round 2 (3-hr, online)","Round 3 (3-hr, online)","World Finals (onsite, USA)"],
+    roundDetail:"5 rounds: Qualification (72-hr window, 3 problems) → Round 1 (3-hr, ~10k advance) → Round 2 (3-hr, ~1k advance) → Round 3 (3-hr, ~100 advance) → World Finals onsite in USA (top 25). Individual participation. Problems are extremely hard — graph theory, computational geometry, DP with complex state spaces. One of the world's most prestigious competitive programming contests.",
+    prize:"$20,000 (1st) + $10,000 (2nd) + $5,000 (3rd) + Meta swag + gold t-shirt (round winners)",
+    perks:"Meta SWE hiring fast-track, global Competitive Programming prestige, gold T-shirt (cultural trophy in CP community)",
+    winners:[
+      {ps:"Tree DP with centroid decomposition + HLD (Round 3 type)", sol:"O(N log²N) solution using heavy-light decomposition; winners write 200-300 line C++ solutions"},
+      {ps:"Computational geometry — polygon intersection (Finals level)", sol:"Sweep line algorithm + convex hull trick with epsilon-comparison floating point"},
+    ],
+    tip:"Meta Hacker Cup is pure competitive programming — no hackathon or product element. Practice on Codeforces (Div 1 + Div 2) and LeetCode Hard daily for 6+ months before competing seriously.",
+    link:"https://www.facebook.com/codingcompetitions/",
+    jobs:true
+  },
+  {
+    id:35, name:"Intel AI Hackathon", org:"Intel", cat:"ai",
+    focus:"AI/ML optimization, edge AI, Intel hardware acceleration",
+    date:"Mar 2027 (Registration: Feb 2027)",
+    status:"upcoming",
+    rounds:["Online Quiz + Screening","Build Round (Intel toolkits)","Grand Finale"],
+    roundDetail:"3 rounds: Online quiz testing AI/ML fundamentals + Intel platform awareness → Build round using Intel AI tools (OpenVINO, Intel Extension for PyTorch, oneMKL) → Grand Finale presentation. Intel provides free access to Intel Developer Cloud and AI hardware for finalists. Focus: real-world AI applications optimized for Intel hardware (edge devices, data centers).",
+    prize:"Cash prizes + Intel hardware + certificates",
+    perks:"Intel hardware (NUC, Movidius), developer cloud credits, patent pathway for top solutions, Intel certification",
+    winners:[
+      {ps:"Real-time defect detection in manufacturing (Edge AI)", sol:"OpenVINO-optimized YOLOv8 deployed on Intel NUC; 40fps inference on edge device"},
+      {ps:"Medical imaging AI on constrained hardware", sol:"INT8 quantized ResNet-50 via OpenVINO achieving 3x speedup on Intel Xeon vs GPU baseline"},
+    ],
+    tip:"Use OpenVINO for any CV task — Intel judges heavily reward their own toolchain usage. Benchmark your model performance improvement explicitly.",
+    link:"https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/training/overview.html",
+    jobs:false
+  },
+  {
+    id:36, name:"Goldman Sachs Engineering Campus Challenge", org:"Goldman Sachs", cat:"finance",
+    focus:"Quantitative engineering, financial algorithms, systems programming",
+    date:"Mid 2027 (India + Global)",
+    status:"upcoming",
+    rounds:["Online Aptitude + Coding Assessment","Technical Interview","Hackathon / Case Challenge"],
+    roundDetail:"3-stage process: Online assessment (aptitude + coding, LeetCode medium difficulty) → Technical interview with Goldman engineers → Final hackathon/case challenge at Goldman Sachs India office. Focus: algorithmic trading systems, risk engine optimization, distributed financial systems. Strong quantitative angle — maths + coding combined.",
+    prize:"Goldman Sachs internship / FTE consideration (₹20–35 LPA roles)",
+    perks:"Goldman Sachs brand, quant finance exposure, elite network, one of the highest-paying campus opportunities",
+    winners:[
+      {ps:"Order matching engine optimization (2024)", sol:"Lock-free concurrent queue in Java/C++ for high-throughput order book processing; 10x latency improvement"},
+      {ps:"Real-time portfolio risk calculator", sol:"Monte Carlo simulation using GPU (CUDA) for VaR computation at sub-millisecond latency"},
+    ],
+    tip:"Goldman values precision and performance. Know your Big-O, understand concurrency, and have strong maths (probability, linear algebra). Financial domain knowledge is a big plus.",
+    link:"https://www.goldmansachs.com/careers",
+    jobs:true
+  },
+  {
+    id:37, name:"Walmart Sparkathon", org:"Walmart Global Tech India", cat:"it",
+    focus:"Retail tech innovation, supply chain AI, customer experience",
+    date:"Mid 2027",
+    status:"upcoming",
+    rounds:["Idea Submission + Online Screening","Prototype Build Phase","Grand Finale at Walmart Tech campus"],
+    roundDetail:"3 rounds: Online idea submission evaluated by Walmart engineers → Working prototype build phase (2–3 weeks) → Grand Finale at Walmart Global Tech India (Bengaluru/Chennai). Distinct from CodeHers (gender-neutral track). Focus: retail AI, last-mile delivery optimization, in-store experience, supply chain visibility. Teams of 2–4.",
+    prize:"Cash prizes + PPI for top performers + Walmart Global Tech internship pathway",
+    perks:"Walmart Global Tech internship (₹25–30 LPA pathway), real retail datasets, Walmart brand on resume",
+    winners:[
+      {ps:"Dynamic pricing engine for perishables (2024)", sol:"Demand-aware price adjustment using XGBoost + real-time inventory data; 18% waste reduction in pilot"},
+      {ps:"AI-powered planogram compliance checker", sol:"Computer vision model (YOLO + shelf mapping) validating store shelf arrangement against planogram standards"},
+    ],
+    tip:"Walmart India judges love solutions with measurable retail impact. Quantify your solution: 'X% waste reduction', 'Y% faster checkout'. Think scale — Walmart operates 10,000+ stores.",
+    link:"https://careers.walmart.com",
+    jobs:true
+  },
+  {
+    id:38, name:"Freshworks Hackathon", org:"Freshworks", cat:"dev",
+    focus:"CRM, ITSM, customer support AI, SaaS product innovation",
+    date:"Oct 2027 (Registration: Sep 2027)",
+    status:"upcoming",
+    rounds:["Online Build + Demo Submission","Shortlist Review","Grand Finale (Freshworks Chennai campus)"],
+    roundDetail:"2–3 rounds: Online build challenge — teams create apps/extensions on Freshworks Developer Platform (Freshdesk, Freshservice, Freshsales) → Shortlisted teams present to Freshworks product team → Grand Finale at Chennai HQ. Strong focus on Freshworks Marketplace app ecosystem. Full access to Freshworks Developer APIs provided.",
+    prize:"Cash prizes + Freshworks internship offer + Freshworks Marketplace publishing",
+    perks:"Freshworks internship (Chennai, ₹25–35k/month), app published on Freshworks Marketplace, product team mentorship",
+    winners:[
+      {ps:"AI-powered ticket sentiment escalation (Freshdesk)", sol:"BERT sentiment classifier integrated via Freshdesk webhook; auto-escalating negative tickets to senior agents"},
+      {ps:"Predictive churn detection for CRM (Freshsales)", sol:"XGBoost model on customer activity signals; surfaced at-risk accounts as dashboard widget in Freshsales"},
+    ],
+    tip:"Build ON the Freshworks platform, not just with it — extensions that integrate natively into Freshdesk/Freshservice score much higher than standalone apps.",
+    link:"https://www.freshworks.com/company/careers/",
+    jobs:true
+  },
+  {
+    id:39, name:"Razorpay FTX / Hackathon", org:"Razorpay", cat:"dev",
+    focus:"Fintech, payments infrastructure, financial inclusion, developer tools",
+    date:"Oct 2027 (Registration: Sep 2027)",
+    status:"upcoming",
+    rounds:["Online Hack Submission","Shortlist + Review","Demo Day (Razorpay Bangalore office)"],
+    roundDetail:"2–3 rounds: Submit a working hackathon project using Razorpay APIs (Payment Gateway, Smart Collect, Route, Capital) → Technical review by Razorpay engineers → Demo Day at Razorpay Bangalore HQ. Focus: innovative payment flows, financial inclusion for underserved populations, developer tooling improvements. Individual or team (up to 4).",
+    prize:"Cash prizes (₹1L+) + Razorpay internship / FTE consideration (₹21–27 LPA)",
+    perks:"Fintech startup exposure, Razorpay engineering team mentorship, strong fintech resume signal",
+    winners:[
+      {ps:"Vernacular UPI payment interface for rural India", sol:"React Native + Razorpay API with voice-guided transaction flow in 6 Indian languages"},
+      {ps:"Automated GST reconciliation using payment data", sol:"Python + Razorpay webhooks auto-generating GST-compliant invoice reconciliation reports"},
+    ],
+    tip:"Razorpay values developer-friendly, production-ready code. Use their sandbox APIs thoroughly. Financial inclusion + Bharat-focused use cases win consistently.",
+    link:"https://razorpay.com/jobs/",
+    jobs:true
+  },
+  {
+    id:40, name:"Paytm Buildathon", org:"Paytm (One97 Communications)", cat:"dev",
+    focus:"Fintech, payments, financial services, super-app features",
+    date:"Jun 2027 (Registration: May 2027)",
+    status:"upcoming",
+    rounds:["Online Build Submission","Internal Review","Final Demo (Noida HQ)"],
+    roundDetail:"2 rounds: Build working product using Paytm APIs (Payment Gateway, Paytm for Business, FASTag) → Final demo at Paytm Noida HQ. Focus on consumer fintech — digital payments, lending, insurance tech, investment flows. Teams build mini-features or standalone tools that could integrate with Paytm's super-app ecosystem.",
+    prize:"Cash prizes + Paytm internship consideration",
+    perks:"Fintech portfolio piece, Paytm brand exposure, startup culture experience",
+    winners:[
+      {ps:"AI-powered spending analytics for Paytm wallet users", sol:"Transformer-based transaction categorization + D3.js dashboard for personal finance insights"},
+      {ps:"SME credit scoring using Paytm transaction history", sol:"LightGBM model on anonymized merchant transaction patterns for micro-loan eligibility prediction"},
+    ],
+    tip:"Paytm favors solutions that fit their super-app vision. Think: what feature would a 300M+ user base use? UX simplicity over technical complexity.",
+    link:"https://paytm.com/careers/",
+    jobs:true
+  },
+  {
+    id:41, name:"NASA Space Apps Challenge", org:"NASA (Global)", cat:"gov",
+    focus:"Space exploration, earth science, climate, satellite data, aerospace",
+    date:"Oct 2027 (48-hr global event, Registration: Sep 2027)",
+    status:"upcoming",
+    rounds:["Local Hub 48-hr Hackathon","Local judging → Global nomination","Global judging (NASA panel)"],
+    roundDetail:"48-hour hackathon held simultaneously across 350+ cities worldwide. Teams join a local hub or participate virtually. NASA provides open datasets (satellite imagery, climate data, ISS telemetry, exoplanet archives). Teams build solutions to real NASA-defined challenges. Local winners nominated to Global judging. Final winners selected by NASA scientists and engineers. Teams of 1–6.",
+    prize:"Global nominees recognized by NASA + certificates + NASA community membership",
+    perks:"NASA engineer mentorship, NASA open data access, global credibility, strong research portfolio piece",
+    winners:[
+      {ps:"Wildfire prediction using VIIRS satellite data", sol:"Random Forest + LSTM ensemble on NASA FIRMS data; real-time fire risk map published on GitHub"},
+      {ps:"Exoplanet atmosphere analysis (2024)", sol:"ML pipeline on NASA JWST spectral data detecting biosignature candidates; won best use of data award"},
+    ],
+    tip:"Use real NASA APIs and datasets — judges are NASA scientists. Chennai has an active local hub. The 48-hr format rewards fast prototyping over perfection.",
+    link:"https://www.spaceappschallenge.org",
+    jobs:false
+  },
+  {
+    id:42, name:"ETHGlobal Hackathons", org:"ETHGlobal", cat:"dev",
+    focus:"Ethereum, Web3, DeFi, NFT infrastructure, zero-knowledge proofs, blockchain",
+    date:"Multiple events — 2027 (cities: NYC, Paris, Singapore, Bangkok + online)",
+    status:"upcoming",
+    rounds:["Registration + team formation","48-hr Build Hackathon","Sponsor judging + demo","Prize distribution"],
+    roundDetail:"48-hour in-person or virtual hackathons run by ETHGlobal across major tech cities. Sponsor companies (Uniswap, Polygon, Chainlink, AAVE, etc.) each offer separate prizes for best use of their protocol. Judges are core protocol engineers. Teams build DeFi apps, NFT tooling, L2 solutions, or ZK proof circuits. Very collaborative — mentors available throughout.",
+    prize:"Multiple sponsor prizes ($500–$5,000 each) + ETHGlobal NFT + global Web3 community recognition",
+    perks:"Web3 job market access, on-chain portfolio proof, sponsor company hiring pipeline, global developer community",
+    winners:[
+      {ps:"ZK-proof based private voting on Ethereum (2024)", sol:"Circom circuit + Groth16 proving system for anonymous on-chain governance votes"},
+      {ps:"Cross-chain DeFi yield optimizer", sol:"Chainlink CCIP + Aave protocol integration for auto-rebalancing liquidity across L2 networks"},
+    ],
+    tip:"Pick one sponsor protocol and go deep rather than building a generic dApp. Judges are protocol engineers — they respect protocol-specific optimization.",
+    link:"https://ethglobal.com",
+    jobs:true
+  },
+  {
+    id:43, name:"MLH Global Hack Week", org:"Major League Hacking (MLH)", cat:"dev",
+    focus:"Themed weekly hacks — AI, Web3, Open Source, Hardware, Productivity",
+    date:"Monthly events throughout 2027",
+    status:"open",
+    rounds:["Registration (free)","Weekly challenge submission","Community judging"],
+    roundDetail:"MLH runs themed Global Hack Week events monthly — each edition has a theme (AI Week, Hardware Week, Web3 Week, etc.) with daily mini-challenges. Free to participate. Individual or team. Submissions are community-judged on the MLH platform. Beginner-friendly — ideal for first-time hackers. Also gateway to MLH's global hackathon fellowship and Major League Hacking Season.",
+    prize:"MLH badges + digital prizes + swag (per event) + MLH Season points",
+    perks:"MLH community (10,000+ hackers), hackathon fellowship eligibility, global network, beginner-to-advanced pathway",
+    winners:[
+      {ps:"AI-powered study scheduler (AI Week 2024)", sol:"Gemini API + Google Calendar integration for auto-generating adaptive study plans from syllabus PDFs"},
+      {ps:"Open source contribution to accessibility library (OSS Week)", sol:"Added screen reader support to popular React component library; merged PR with 200+ GitHub stars"},
+    ],
+    tip:"MLH Hack Week is perfect as a first hackathon before entering bigger contests. Complete multiple weeks to build an MLH portfolio and qualify for their Fellowship program.",
+    link:"https://mlh.io",
+    jobs:false
+  },
+  {
+    id:44, name:"HackMIT", org:"MIT", cat:"bigtech",
+    focus:"Open theme — hardware, software, AI, social impact, any domain",
+    date:"Sep 2027 (Application: Aug 2027)",
+    status:"upcoming",
+    rounds:["Application screening","Hackathon weekend (36-hr, Cambridge USA)","Demo + judging"],
+    roundDetail:"36-hour in-person hackathon at MIT campus, Cambridge USA. Application-based — competitive selection (acceptance rate ~30%). Open theme: teams of 1–4 build any project. Sponsors (Google, Jane Street, Citadel, etc.) each offer category prizes. 1000+ hackers, world-class mentors. Attendance is funded for international participants in some cases.",
+    prize:"Category prizes from sponsors ($500–$3,000 per track) + MIT recognition",
+    perks:"MIT campus experience, elite hacker network, sponsor hiring pipeline, prestigious portfolio event",
+    winners:[
+      {ps:"Real-time sign language translation app (2023)", sol:"MediaPipe hand tracking + custom LSTM for ASL→text translation; 94% accuracy on test set"},
+      {ps:"Peer-to-peer carbon credit marketplace", sol:"Ethereum smart contracts + React frontend for direct-to-consumer carbon offset trading"},
+    ],
+    tip:"HackMIT is highly competitive to get in — apply early with a strong portfolio. Once in, winning a sponsor prize is more achievable than overall; pick 2–3 relevant sponsor tracks.",
+    link:"https://hackmit.org",
+    jobs:false
+  },
+  {
+    id:45, name:"AngelHack Global Hackathon Series", org:"AngelHack", cat:"dev",
+    focus:"Startup-focused innovation — AI, fintech, health, climate, developer tools",
+    date:"Multi-city 2027 (Asia, US, Europe + Virtual)",
+    status:"upcoming",
+    rounds:["Local City Hackathon (48-hr)","Regional Demo Day","Global Demo Day (top teams)"],
+    roundDetail:"4 rounds: Local city hackathon (48-hr, teams of 2–5) → Local winners advance to Regional Demo Day → Top regional winners compete at Global Demo Day before investors and press. AngelHack focuses on startup-ready ideas — judges are VCs, entrepreneurs, and tech leads. Participation in local hub + virtual option. Chennai/Bangalore are active India hubs.",
+    prize:"Cash prizes + VC introductions + AngelHack HACKcelerator program entry",
+    perks:"Startup investor visibility, HACKcelerator (startup accelerator for winners), global tech community network",
+    winners:[
+      {ps:"AI tutor for tier-2/3 city students (2024 India hub)", sol:"WhatsApp-integrated tutoring bot using Mistral + RAG on NCERT textbooks; 50k+ active users"},
+      {ps:"Peer lending for micro-farmers via UPI", sol:"Credit scoring ML model + Razorpay integration for farmer collective P2P lending platform"},
+    ],
+    tip:"AngelHack is startup-first. Bring a business model, not just a demo. Judges ask: who pays for this? How does it grow? Have clear monetization and traction plan.",
+    link:"https://angelhack.com",
+    jobs:false
+  },
+  {
+    id:46, name:"TechCrunch Disrupt Hackathon", org:"TechCrunch", cat:"bigtech",
+    focus:"Startup-grade innovation — any domain, high-impact product ideas",
+    date:"Sep 2027 (San Francisco, Registration: Aug 2027)",
+    status:"upcoming",
+    rounds:["Application to participate","24-hr Hackathon (SF, in-person)","Pitch to TechCrunch Disrupt audience"],
+    roundDetail:"24-hour in-person hackathon at TechCrunch Disrupt conference, San Francisco. Application-based entry. Teams of 1–5 build from scratch. Winners pitch live at Disrupt to an audience of 10,000+ including investors, press, and tech leaders. One of the most prestigious hackathons in startup culture — several billion-dollar companies started here (GroupMe, Zapier, etc.).",
+    prize:"Prizes from sponsors + media coverage + potential VC attention",
+    perks:"TechCrunch media exposure, VC investor meetings, Disrupt conference access, startup credibility",
+    winners:[
+      {ps:"AI-powered B2B contract intelligence (2024)", sol:"LLM pipeline extracting key clauses and risk flags from enterprise contracts; signed 3 pilots at Disrupt"},
+      {ps:"Real-time accessibility overlay for any website", sol:"Browser extension using GPT-4o Vision for on-demand alt-text and cognitive load reduction"},
+    ],
+    tip:"Disrupt rewards ideas that could be companies, not just cool tech. Have a business pitch ready. You'll be pitching to journalists and investors, not engineers.",
+    link:"https://techcrunch.com/events",
+    jobs:false
+  },
+  {
+    id:47, name:"KPMG Global Hackathon", org:"KPMG", cat:"finance",
+    focus:"Audit tech, tax automation, ESG analytics, regulatory AI",
+    date:"Mid 2027 (Regional + Global Final in Europe/US)",
+    status:"upcoming",
+    rounds:["Regional Online Screening","Regional Semi-Final","Global Final (Europe or US)"],
+    roundDetail:"3 rounds: Online regional screening (idea + initial prototype) → Regional semi-final (shortlisted teams present to KPMG partners) → Global Final in Europe or USA for top regional teams. Focus: AI for audit automation, tax compliance, ESG reporting, regulatory intelligence. KPMG provides industry mentors and data access for finalists.",
+    prize:"Cash prizes + KPMG internship pathway + global recognition",
+    perks:"Big 4 accounting firm network, audit-tech portfolio, global travel for finalists, KPMG hiring signal",
+    winners:[
+      {ps:"Automated ESG disclosure extraction from annual reports", sol:"LLM-based RAG pipeline extracting BRSR/GRI/SASB metrics from PDF annual reports; 91% accuracy"},
+      {ps:"AI-assisted tax anomaly detection", sol:"Isolation Forest + rule engine on financial transaction data flagging tax irregularities for audit review"},
+    ],
+    tip:"KPMG judges are partners, not engineers — business impact language matters. Frame solutions as 'reducing audit hours by X%' not just 'I used BERT'. Know ESG reporting standards (GRI, BRSR).",
+    link:"https://home.kpmg",
+    jobs:true
+  },
 ];
 
 let activeFilter = 'all';
@@ -997,7 +1402,7 @@ function render() {
           `).join('')}
         </div>
         <div class="detail-section">
-          <div class="detail-label">Pro tip for PRO BOTS</div>
+          <div class="detail-label">Pro Tips for Students</div>
           <div class="detail-text tip-box">${d.tip}</div>
         </div>
         <a href="${d.link}" class="official-link" target="_blank">Official page →</a>
